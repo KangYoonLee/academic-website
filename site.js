@@ -26,15 +26,50 @@
     }
     document.querySelectorAll('.year').forEach(e=>e.textContent=String(new Date().getFullYear()));
     const news=[
-      {date:'Aug 2026',title:'Started my Ph.D. in Computer Science at Johns Hopkins University',tag:'Academic',desc:'I began my doctoral studies in Computer Science at Johns Hopkins University, focusing on networking and systems for AI datacenters.'},
-      {date:'May 2026',title:'Completed my research internship at KIST',tag:'Research',desc:'I completed my research internship at the Korea Institute of Science and Technology, where I worked on network-data analysis and multimodal spatiotemporal modeling.'},
-      {date:'2026',title:'Co-authored a research poster at IPIU 2026',tag:'Publication',desc:'Our work, “Frequency-Aware Multi-Resolution Architecture for High-Resolution Spatiotemporal Map Reconstruction from Sparse Observations,” appeared as a poster at IPIU 2026.'},
-      {date:'2025',title:'Co-authored a traffic prediction poster at IEIE 2025',tag:'Publication',desc:'Our work on learnable adjacency matrices for spatiotemporal graph convolutional networks was presented as a poster at the IEIE Autumn Annual Conference.'},
-      {date:'Dec 2023',title:'Received a Best Paper Award for synthetic data research',tag:'Award',desc:'Our work comparing generative AI models for synthetic data received a Best Paper Award at an international engineering and ICT conference.'}
-    ];
+  {
+    "date": "Aug 2026",
+    "title": "Started my Ph.D. in Computer Science at Johns Hopkins University",
+    "desc": "[TBD]"
+  },
+  {
+    "date": "May 2026",
+    "title": "Completed my AI research internship at KIST",
+    "desc": "[TBD]"
+  },
+  {
+    "date": "Feb 2026",
+    "title": "Presented our KIST research as a poster at IPIU 2026",
+    "desc": "Our research at KIST was presented as a poster at IPIU 2026."
+  },
+  {
+    "date": "Nov 2025",
+    "title": "Presented our KIST research as a poster at IEIE 2025",
+    "desc": "Our research at KIST was presented as a poster at IEIE 2025."
+  },
+  {
+    "date": "Oct 2025",
+    "title": "Presented our team’s research at KPEX 2025",
+    "desc": "Our team's research was selected for presentation at KPEX 2025."
+  },
+  {
+    "date": "Mar 2025",
+    "title": "Started my research internship at KIST",
+    "desc": "[TBD]"
+  },
+  {
+    "date": "Feb 2025",
+    "title": "Graduated from Hankuk University of Foreign Studies",
+    "desc": "I graduated with a GPA of 4.34/4.50 (Top 1.8%) and was grateful to receive several scholarships during my undergraduate studies."
+  },
+  {
+    "date": "Nov 2023",
+    "title": "Received a Best Paper Award",
+    "desc": "[TBD]"
+  }
+];
     document.querySelectorAll('[data-news-list]').forEach(el=>{
       const count=Number(el.getAttribute('data-news-limit')||news.length);
-      el.innerHTML=news.slice(0,count).map(n=>`<details class="news-entry"><summary><span class="news-date">${n.date}</span><span class="news-title">${n.title}<span class="tag">${n.tag}</span></span><span class="chevron" aria-hidden="true">+</span></summary><p class="news-detail">${n.desc}</p></details>`).join('');
+      el.innerHTML=news.slice(0,count).map(n=>`<details class="news-entry"><summary><span class="news-date">${n.date}</span><span class="news-title">${n.title}</span><span class="chevron" aria-hidden="true">+</span></summary><p class="news-detail">${n.desc}</p></details>`).join('');
     });
   });
 })();
