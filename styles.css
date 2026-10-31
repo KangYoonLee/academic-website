@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;450;500;550;600;650;700&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 :root {
   --bg:#fafaf8; --surface:#ffffff; --ink:#262c35; --muted:#68717d; --light:#8d949d;
   --border:#e7e9e9; --accent:#365f89; --accent-soft:#ebf2f8; --card:#f5f7f6;
@@ -27,3 +27,146 @@ section{scroll-margin-top:120px}.section{margin-top:65px}.section-heading{displa
 @media(max-width:850px){.hero{grid-template-columns:230px 1fr;gap:35px;padding-top:65px}.portrait-wrap{width:230px}.portrait{height:280px}.research-steps{grid-template-columns:1fr 1fr}.nav{gap:15px}}
 @media(max-width:640px){.wrap{width:min(calc(100% - 36px),var(--max))}.header-inner{min-height:66px}.mobile-menu{display:block;margin-left:auto}.nav{display:none;position:absolute;left:0;right:0;top:66px;background:var(--bg);border-bottom:1px solid var(--border);padding:17px 20px 25px;flex-direction:column;align-items:stretch;gap:13px}.nav.open{display:flex}.nav a{padding:6px 0}.theme-toggle{align-self:flex-start}.hero{display:block;padding:46px 0 30px}.portrait-wrap{width:205px;margin-bottom:30px}.portrait{height:245px}.portrait-note{text-align:left}.hero h1{font-size:3.8rem}.section{margin-top:48px}h2{font-size:1.9rem}.section-rule{margin-top:54px}.research-steps{grid-template-columns:1fr}.project{grid-template-columns:100px 1fr;gap:16px;padding:15px}.project-art{min-height:115px}.project h3{font-size:1rem}.project p{font-size:.81rem}.news-entry summary{grid-template-columns:78px 1fr 18px;gap:9px}.news-detail{margin:-3px 25px 17px 87px}.tag{margin-left:0;margin-top:4px}.page-hero{padding:55px 0 24px}.page-hero h1{font-size:3.6rem}.detail{padding:22px}.statement{font-size:1.3rem}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+
+
+/* Academic minimalism refresh, 2026-10-31.
+   Keeps the existing layout, content, dark mode and responsive behavior. */
+:root {
+  --bg:#fcfcfb; --surface:#fff; --ink:#292e33; --muted:#58626d;
+  --light:#8a929b; --border:#e5e8e9; --accent:#446781;
+  --accent-soft:#f5f7f8; --card:#f4f6f6; --shadow:none; --max:900px;
+}
+[data-theme="dark"] {
+  --bg:#171b1f; --surface:#1b2025; --ink:#e8edf0;
+  --muted:#b1bac3; --light:#8a98a5; --border:#343b43;
+  --accent:#a6c4d9; --accent-soft:#222b33; --card:#20272d;
+  --shadow:none;
+}
+body {
+  font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;
+  font-size:15px;line-height:1.78;font-weight:400;letter-spacing:-.008em;
+}
+h1,h2,h3,.brand,.statement {
+  font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;
+  letter-spacing:-.025em;
+}
+h1,h2,h3{font-weight:600;line-height:1.35}
+h2{font-size:1.48rem}
+h3{font-size:1rem;letter-spacing:-.018em}
+a:hover{color:var(--accent)}
+.site-header {background:color-mix(in srgb,var(--bg) 96%,transparent);backdrop-filter:blur(12px)}
+.header-inner{min-height:69px}
+.brand{font-size:.98rem;font-weight:600;letter-spacing:-.018em}
+.brand-dot{color:var(--muted)}
+.nav{gap:24px}
+.nav a{font-size:.86rem;font-weight:400;color:var(--muted)}
+.nav a.active{font-weight:600;color:var(--ink)}
+.theme-toggle{width:32px;height:32px;border-radius:6px;background:transparent}
+.theme-toggle:hover{transform:none;background:var(--accent-soft)}
+main{padding-bottom:82px}
+.hero{grid-template-columns:218px minmax(0,1fr);gap:48px;padding:69px 0 54px;align-items:center}
+.portrait-wrap{width:218px}
+.portrait{height:267px;border-radius:3px;filter:saturate(.78)}
+.portrait-note{font-size:.7rem;margin-top:8px}
+.hero-copy .eyebrow,.kicker{
+  font-size:.72rem;letter-spacing:.025em;font-weight:500;
+  text-transform:none;color:var(--muted);
+}
+.hero h1{
+  font-size:clamp(2.35rem,4vw,2.75rem);font-weight:600;
+  letter-spacing:-.032em;line-height:1.16;margin:10px 0 10px;
+}
+.position{font-size:.96rem;font-weight:500;margin:8px 0 2px}
+.affiliation{font-size:.9rem;margin-bottom:19px}
+.rule{margin:19px 0 16px}
+.interests-label{font-size:.74rem;letter-spacing:0;text-transform:none;font-weight:600;margin-bottom:5px}
+.interests{font-size:.89rem;line-height:1.7;margin-bottom:16px}
+.link-row{font-size:.88rem;font-weight:500;gap:12px}
+.section{margin-top:51px}
+.section-heading{margin-bottom:21px}
+.more-link{font-size:.83rem;font-weight:500}
+.body-copy{max-width:815px;font-size:.96rem;color:var(--ink);line-height:1.9}
+.body-copy strong{font-weight:600}
+.statement{
+  margin:26px 0 18px;padding:7px 0 7px 17px;
+  border-left:2px solid var(--border);background:transparent;
+  font-size:.98rem;font-weight:400;line-height:1.75;
+  color:var(--muted);letter-spacing:-.01em;
+}
+.research-steps{gap:28px;margin-top:25px}
+.step{padding:4px 0;background:transparent;border:0;border-radius:0}
+.step-no{font-size:.7rem;font-weight:500;letter-spacing:.01em;color:var(--muted)}
+.step h3{margin:7px 0 5px;font-size:.92rem;font-weight:600}
+.step p{font-size:.84rem;line-height:1.75}
+.section-rule{margin-top:56px;background:var(--border)}
+.project-list{gap:0}
+.project{
+  grid-template-columns:125px minmax(0,1fr);gap:21px;
+  padding:19px 0;border:0;border-bottom:1px solid var(--border);
+  border-radius:0;background:transparent;box-shadow:none;
+}
+.project:first-child{padding-top:4px}
+.project:hover{border-color:var(--border)}
+.project-art{min-height:100px;border-radius:3px;background:var(--card)}
+.project-art svg{max-height:110px}
+.project-kind{font-size:.71rem;letter-spacing:.01em;font-weight:500;text-transform:none;color:var(--muted)}
+.project h3{font-size:1rem;line-height:1.52;margin:3px 0 6px}
+.project p{font-size:.86rem;line-height:1.72}
+.project-meta{font-size:.74rem;margin-top:8px}
+.news-entry summary{padding:16px 2px;grid-template-columns:99px 1fr 19px;gap:15px}
+.news-title{font-size:.9rem;font-weight:500}
+.news-date{font-size:.77rem}
+.news-detail{margin:-4px 36px 17px 116px;font-size:.87rem}
+.tag{font-weight:400;font-size:.68rem;border-color:var(--border);background:transparent;padding:1px 7px}
+.pub-list{gap:17px}
+.pub{padding-bottom:17px}
+.pub-year{font-weight:500;color:var(--muted)}
+.pub-title{font-weight:600;font-size:.96rem}
+.pub-authors,.pub-venue{font-size:.84rem}
+.pub-award{color:var(--accent);background:transparent;padding:0;font-size:.78rem}
+.page-hero{padding:68px 0 26px}
+.page-hero h1{
+  font-family:'Inter',sans-serif;font-size:clamp(2.15rem,4vw,2.5rem);
+  font-weight:600;line-height:1.2;letter-spacing:-.03em;margin:10px 0 17px;
+}
+.page-hero p{font-size:.94rem}
+.detail-list{gap:0}
+.detail{
+  background:transparent;border:0;border-bottom:1px solid var(--border);
+  padding:24px 0;border-radius:0;
+}
+.detail:first-child{padding-top:14px}
+.detail h2{font-family:'Inter',sans-serif;font-size:1.09rem;font-weight:600;letter-spacing:-.016em}
+.detail p{font-size:.92rem;line-height:1.82}
+.detail .micro{font-size:.8rem;font-weight:500;color:var(--muted)}
+.empty-state{background:transparent;border:1px solid var(--border);border-radius:3px}
+.empty-state h2{font-size:1.5rem}
+.topic-chips span{font-size:.79rem;border-radius:4px}
+.site-footer{font-size:.77rem;padding:26px 0 38px}
+@media(max-width:850px){
+  .hero{grid-template-columns:198px minmax(0,1fr);gap:33px;padding-top:55px}
+  .portrait-wrap{width:198px}.portrait{height:240px}
+  .nav{gap:15px}
+}
+@media(max-width:640px){
+  .header-inner{min-height:63px}
+  .nav{top:63px}
+  .hero{display:block;padding:36px 0 24px}
+  .portrait-wrap{width:184px;margin-bottom:25px}
+  .portrait{height:224px}
+  .hero h1{font-size:2.45rem}
+  h2{font-size:1.4rem}
+  .section{margin-top:39px}
+  .section-rule{margin-top:42px}
+  .research-steps{grid-template-columns:1fr;gap:18px}
+  .project{grid-template-columns:90px minmax(0,1fr);gap:15px;padding:16px 0}
+  .project-art{min-height:96px}
+  .project h3{font-size:.92rem}
+  .project p{font-size:.81rem}
+  .news-entry summary{grid-template-columns:80px 1fr 15px;gap:8px}
+  .news-detail{margin:-4px 20px 17px 88px}
+  .page-hero{padding:44px 0 18px}
+  .page-hero h1{font-size:2.2rem}
+  .detail{padding:20px 0}
+  .statement{font-size:.95rem}
+}
