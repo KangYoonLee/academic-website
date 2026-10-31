@@ -170,3 +170,18 @@ main{padding-bottom:82px}
   .detail{padding:20px 0}
   .statement{font-size:.95rem}
 }
+
+/* Profile and research content revision */
+.hero{grid-template-columns:176px minmax(0,1fr);gap:39px;padding:53px 0 40px}
+.portrait-wrap{width:176px}.portrait{height:215px;object-position:center 42%}
+.hero h1{font-size:2.05rem;letter-spacing:-.025em;margin:0 0 12px}
+.position{font-size:.92rem}.affiliation{font-size:.87rem}
+.hero .eyebrow{display:none}
+.research-statement-block{padding:26px 0;border-bottom:1px solid var(--border);max-width:780px}
+.research-statement-block h2{font-size:1.12rem;margin-bottom:10px}
+.research-statement-block p{font-size:.95rem;line-height:1.82;color:var(--muted)}
+.research-statement-block .statement-line{color:var(--ink);font-weight:600}
+.tbd-marker{font-size:.82rem;color:var(--muted);font-weight:400}
+.paper-abstract{max-width:750px;font-size:.87rem;line-height:1.7;color:var(--muted);margin:12px 0}
+.pub h2.pub-title{font-family:Inter,Arial,sans-serif;font-size:1.04rem;line-height:1.5;font-weight:600;margin:4px 0 7px;letter-spacing:-.012em}
+@media(max-width:640px){.hero{display:block;padding:32px 0 21px}.portrait-wrap{width:168px;margin-bottom:21px}.portrait{height:206px}.hero h1{font-size:2.05rem}}
