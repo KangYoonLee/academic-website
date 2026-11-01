@@ -14,11 +14,12 @@ A lightweight, responsive, multi-page academic website intended for `kangyoon-le
 - `styles.css` — responsive visual design; custom day/night colors
 - `site.js` — working theme toggle, mobile nav, expandable news, footer year
 - `assets/Kangyoon_Lee_CV.pdf` — copy of the provided CV
-- `assets/profile-placeholder.svg` — **placeholder**, not an actual photo
+- `assets/profile.jpg` — the portrait selected in the October 31 website-planning conversation
+- `assets/project-{kist,bn-ctgan,pfs-dff,lstm}.(png/jpg)` — actual photographs and research diagrams
 
 ## Review before publishing
 
-1. Replace the placeholder image with your own professional portrait. Change the `src` and `alt` in `index.html`, or overwrite with your image and change the file path.
+1. Review the selected portrait and four project visuals for public presentation. The JHU ongoing project intentionally has no photograph yet.
 2. Add your **verified LinkedIn URL** in `index.html` in place of the disabled `LinkedIn` span.
 3. Review biography, project descriptions, and publication data for accuracy. Do not claim unreported results from ongoing AI DCN experiments.
 4. Review the CV before making it publicly downloadable. The attached version is dated 2026-10-26.

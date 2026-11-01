@@ -185,3 +185,76 @@ main{padding-bottom:82px}
 .paper-abstract{max-width:750px;font-size:.87rem;line-height:1.7;color:var(--muted);margin:12px 0}
 .pub h2.pub-title{font-family:Inter,Arial,sans-serif;font-size:1.04rem;line-height:1.5;font-weight:600;margin:4px 0 7px;letter-spacing:-.012em}
 @media(max-width:640px){.hero{display:block;padding:32px 0 21px}.portrait-wrap{width:168px;margin-bottom:21px}.portrait{height:206px}.hero h1{font-size:2.05rem}}
+
+/* Portrait framing: a sharp, centered subject over a softly blurred copy
+   of the original photograph. Update both image src attributes together. */
+.portrait-frame{
+  position:relative;
+  width:100%;
+  height:215px;
+  overflow:hidden;
+  border-radius:3px;
+  background:var(--card);
+  isolation:isolate;
+}
+.portrait-frame .portrait-backdrop{
+  position:absolute;
+  inset:-17px;
+  width:calc(100% + 34px);
+  height:calc(100% + 34px);
+  object-fit:cover;
+  filter:blur(17px) brightness(.94);
+  transform:scale(1.04);
+  opacity:.8;
+  z-index:0;
+}
+.portrait-frame .portrait{
+  position:relative;
+  z-index:1;
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  object-position:center;
+  filter:none;
+  border-radius:0;
+}
+@media(max-width:640px){
+  .portrait-frame{height:206px}
+}
+
+/* Project photography: actual research materials, with images aligned left. */
+.project-art{overflow:hidden}
+.project-art img{
+  display:block;width:100%;height:100%;min-height:100px;
+  object-fit:cover;object-position:center;border-radius:3px;
+}
+.project-art-empty{background:var(--card)}
+.detail-list .detail{
+  display:grid;
+  grid-template-columns:215px minmax(0,1fr);
+  gap:24px;
+  align-items:start;
+}
+.detail-media{
+  min-width:0;aspect-ratio:4 / 3;
+  overflow:hidden;
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:3px;
+}
+.detail-media img{
+  display:block;width:100%;height:100%;
+  object-fit:contain;object-position:center;
+  background:#fff;
+}
+.detail-media-empty{background:var(--card);border-color:transparent}
+.detail-copy{min-width:0}
+@media(max-width:700px){
+  .detail-list .detail{grid-template-columns:132px minmax(0,1fr);gap:16px}
+}
+@media(max-width:520px){
+  .detail-list .detail{grid-template-columns:1fr;gap:12px}
+  .detail-media{max-width:270px}
+  .detail-media-empty{min-height:90px;max-width:180px}
+}
