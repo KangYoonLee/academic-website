@@ -28,43 +28,43 @@
     const news=[
   {
     "date": "Aug 2026",
-    "title": "Started my Ph.D. in Computer Science at Johns Hopkins University",
-    "desc": "[TBD]"
+    "title": "Started My Ph.D. at Johns Hopkins University",
+    "desc": "I'm excited to begin my Ph.D. in Computer Science at Johns Hopkins University! I'm investigating the origins of traffic bursts in distributed AI training, hoping to turn these insights into better scheduling and load-balancing mechanisms. I can't wait to see where this journey takes me!"
   },
   {
     "date": "May 2026",
-    "title": "Completed my AI research internship at KIST",
-    "desc": "[TBD]"
+    "title": "Completed My Research Internship at KIST",
+    "desc": "After 14 wonderful months, my time at KIST has come to an end. I'm grateful to Dr. Haesol Park, Dr. Heeseung Choi, and Dr. Hyungjoo Jung for their guidance, and to Eunshik Kim and Yekwon Kim for working alongside me. I hope our paths cross again at a conference someday!"
   },
   {
     "date": "Feb 2026",
-    "title": "Presented our KIST research as a poster at IPIU 2026",
-    "desc": "Our research at KIST was presented as a poster at IPIU 2026."
+    "title": "Presented Our Research at IPIU 2026",
+    "desc": "Our research on frequency-aware spatiotemporal map reconstruction was presented as a poster at IPIU 2026 in Jeju! We developed a Fourier-based multi-resolution framework to reconstruct high-resolution maps from extremely sparse observations while preserving spatial structures and boundaries."
   },
   {
     "date": "Nov 2025",
-    "title": "Presented our KIST research as a poster at IEIE 2025",
-    "desc": "Our research at KIST was presented as a poster at IEIE 2025."
+    "title": "Presented Our Research at IEIE 2025",
+    "desc": "Our research on learnable spatiotemporal graph networks was presented as a poster at IEIE 2025 in Gwangju, Gyeonggi-do! Our model learns hidden relationships between traffic sensors directly from data rather than relying on predefined road-network connections."
   },
   {
     "date": "Oct 2025",
-    "title": "Presented our team’s research at KPEX 2025",
-    "desc": "Our team's research was selected for presentation at KPEX 2025."
+    "title": "Showcased Our Research at KPEX 2025",
+    "desc": "Our multimodal time-series research for proactive crowd-density management was showcased at <a href=\"https://eng.police-expo.com/exhibition/show-report/\" target=\"_blank\" rel=\"noopener noreferrer\">KPEX 2025</a> in Songdo, Incheon! As the lead presenter at our booth, I enjoyed sharing how our work could support public safety and discussing its real-world applications with visitors beyond academia."
   },
   {
     "date": "Mar 2025",
-    "title": "Started my research internship at KIST",
-    "desc": "[TBD]"
+    "title": "Joined KIST as a Full-Time Research Intern",
+    "desc": "I'm excited to join <a href=\"https://vig.kist.re.kr/\" target=\"_blank\" rel=\"noopener noreferrer\">KIST's Visual Intelligence Group</a> as a full-time Research Intern! As one of three researchers on a crowd-safety project (~$1.2M), I'll focus on multimodal time-series modeling and distributed training optimization. It's a big responsibility, but I'm ready for the challenge!"
   },
   {
     "date": "Feb 2025",
     "title": "Graduated from Hankuk University of Foreign Studies",
-    "desc": "I graduated with a GPA of 4.34/4.50 (Top 1.8%) and was grateful to receive several scholarships during my undergraduate studies."
+    "desc": "I graduated <em>summa cum laude</em> from Hankuk University of Foreign Studies (HUFS) with a B.Eng. in Information and Communications Engineering (<strong>GPA 4.34/4.50, top 1.8%</strong>)! The late nights and challenges taught me persistence, and now I'm excited to take my next step into research."
   },
   {
-    "date": "Nov 2023",
-    "title": "Received a Best Paper Award",
-    "desc": "[TBD]"
+    "date": "Dec 2023",
+    "title": "Received the Best Paper Award at NCAEIC 2023",
+    "desc": "Our paper on privacy-preserving synthetic transportation data, conducted with the <a href=\"https://main.kotsa.or.kr/eng/engMain.do\" target=\"_blank\" rel=\"noopener noreferrer\">Korea Transportation Safety Authority (KOTSA)</a>, received the <strong>Best Paper Award (1/95)</strong> at NCAEIC 2023! We compared GAN, CTGAN, and VAE, with CTGAN performing best overall. I'm grateful to Dr. Sejong Oh, Dr. Illchul Doo, and my teammates Jihwan Baik and Hanbin Ryou for this memorable first award!"
   }
 ];
     document.querySelectorAll('[data-news-list]').forEach(el=>{
