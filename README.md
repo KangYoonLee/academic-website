@@ -1,6 +1,6 @@
 # Kangyoon Lee — Academic Website (Starter)
 
-A lightweight, responsive, multi-page academic website intended for `kangyoon-lee.com`. **Revised Oct 31, 2026** to reflect the user’s latest MIT Manya Ghobadi/Mohammad Alizadeh Vision/Mission discussion and Google Drive project materials.
+A lightweight, responsive, multi-page academic website intended for `kangyoon-lee.com`. 
 
 **Status:** Revised review draft. The user has purchased the domain on Cloudflare, but the website is not yet deployed or linked.
 
