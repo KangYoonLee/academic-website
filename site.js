@@ -27,6 +27,11 @@
     document.querySelectorAll('.year').forEach(e=>e.textContent=String(new Date().getFullYear()));
     const news=[
   {
+    "date": "Nov 2026",
+    "title": "Launched CollectiveScope: Visualizing GPU Collectives for AI DCN",
+    "desc": "I just launched <a href=\"https://kangyoonlee.github.io/ai-dcn-collectives/\" target=\"_blank\" rel=\"noopener noreferrer\">CollectiveScope</a>, an interactive visualization of collective communication reimagined through an AI datacenter networking lens! Adapted from <a href=\"https://hyojun.me/gpu-comm-visualizer/\" target=\"_blank\" rel=\"noopener noreferrer\">Hyojun Jeon's GPU Communication Visualizer</a>, it helps explore how GPU collective patterns relate to network topology and traffic. I hope it's useful to everyone working on AI DCN, and I'd love to hear your feedback and suggestions! :)"
+  },
+  {
     "date": "Aug 2026",
     "title": "Started My Ph.D. at Johns Hopkins University",
     "desc": "I'm excited to begin my Ph.D. in Computer Science at Johns Hopkins University! I'm investigating the origins of traffic bursts in distributed AI training, hoping to turn these insights into better scheduling and load-balancing mechanisms. I can't wait to see where this journey takes me!"
