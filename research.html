@@ -17,24 +17,26 @@
 <body>
 <header class="site-header"><div class="wrap header-inner"><button class="mobile-menu" aria-controls="main-nav" aria-expanded="false">Menu ☰</button><nav class="nav" id="main-nav" aria-label="Main navigation"><a href="index.html">About</a><a class="active" aria-current="page" href="research.html">Research</a><a href="projects.html">Projects</a><a href="publications.html">Publications</a><a href="news.html">News</a><a href="blog.html">Blog</a><button class="theme-toggle" aria-label="Switch color theme"></button></nav></div></header>
 <main class="wrap research-page">
-  <div class="page-hero"><h1>Research Statement</h1><p>My research direction, from a long-term vision to the systems questions I study today.</p></div>
+  <div class="page-hero"><h1>Research Statement</h1><p>From the problem I want to solve to the measurements informing my next research steps.</p></div>
   <section class="research-statement-block" aria-labelledby="vision-title">
     <h2 id="vision-title">Vision</h2>
-    <p class="statement-line">Enable everyone to independently choose, customize, and deploy AI.</p>
-    <p>I want AI to be more accessible to people with different needs and computing resources, without requiring them to build or manage large-scale infrastructure themselves.</p>
+    <p class="statement-line">Make AI experimentation faster and more accessible, without requiring ever-larger computing resources.</p>
+    <p>I want progress in AI to be constrained more by ideas than by the time and infrastructure required to test them.</p>
+  </section>
+  <section class="research-statement-block" aria-labelledby="problem-title">
+    <h2 id="problem-title">Problem</h2>
+    <p class="statement-line">Distributed AI training generates uneven, bursty communication that can leave network capacity poorly utilized.</p>
+    <p>In workloads such as mixture-of-experts (MoE), collective operations and compute phases interact across ranks. Network-level traffic measurements alone do not fully explain how these execution patterns translate into bursts, gaps, and contention.</p>
   </section>
   <section class="research-statement-block" aria-labelledby="mission-title">
     <h2 id="mission-title">Mission</h2>
-    <p class="statement-line">Unlock the full potential of available computing resources through workload understanding and system optimization.</p>
-    <p>Understanding how AI workloads interact with compute and communication systems can guide more efficient resource use and help move toward that vision.</p>
+    <p class="statement-line">Understand communication demand at its source, then use that understanding to make better network-control decisions.</p>
+    <p>My research direction is to connect AI workload execution with observed network behavior and, ultimately, design proactive routing, load-balancing, and scheduling mechanisms that reduce communication bottlenecks and training job completion time.</p>
   </section>
   <section class="research-statement-block" aria-labelledby="focus-title">
     <h2 id="focus-title">Current Research Focus</h2>
-    <p>I am investigating traffic bursts in distributed AI collective communication, beginning with controlled, cross-layer measurements of communication timing and network activity. I aim to use insights about burst origins to inform workload-aware communication, scheduling, and load-balancing mechanisms.</p>
-  </section>
-  <section class="research-statement-block" aria-labelledby="submissions-title">
-    <h2 id="submissions-title">Sub-missions <span class="tbd-marker">[TBD]</span></h2>
-    <p class="muted">Specific research directions and milestones will be refined as the work develops.</p>
+    <p class="statement-line">MoE execution, collective timing, and observed NIC traffic.</p>
+    <p>At Johns Hopkins, I instrument DeepSpeed MoE operations and align execution traces with NIC measurements. I am characterizing cross-rank collective entry/exit timing skew and traffic gaps across MoE configurations and repeated workload runs. This measurement work is a foundation for future workload-aware network control.</p>
   </section>
 </main>
 <footer class="site-footer"><div class="wrap footer-inner"><span>© <span class="year">2026</span> Kangyoon Lee</span><span class="footer-note">Research direction · Updated as my work evolves</span></div></footer>
