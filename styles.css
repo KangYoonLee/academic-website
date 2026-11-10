@@ -261,3 +261,22 @@ main{padding-bottom:82px}
 
 /* Header without a wordmark: right-align navigation on desktop. */
 @media (min-width:641px) { .header-inner { justify-content:flex-end; } }
+
+
+/* Project galleries: one image now, optional second image later.
+   Add a second .detail-media sibling inside .detail-media-stack when available. */
+.detail-media-stack{display:grid;grid-template-columns:minmax(0,1fr);gap:11px;align-content:start;min-width:0}
+.detail-media-stack .detail-media{margin:0;max-width:100%}
+.detail-media-stack .detail-media > a{display:block;width:100%;height:100%;}
+.detail-media-stack .detail-media img{display:block;width:100%;height:100%;object-fit:contain}
+.detail-media-stack .detail-media a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+
+
+/* Project research category tags: quiet secondary labels beside each title. */
+.detail-title-row{display:flex;align-items:baseline;justify-content:flex-start;gap:11px;flex-wrap:wrap;margin:0 0 13px}
+.detail-title-row h2{margin:0}
+.research-category{display:inline-flex;align-items:center;flex:0 0 auto;white-space:nowrap;
+  border:1px solid var(--border);background:var(--accent-soft);color:var(--muted);
+  padding:2px 8px;border-radius:4px;font-size:.69rem;font-weight:600;
+  line-height:1.55;letter-spacing:.005em}
+@media(max-width:520px){.detail-title-row{align-items:center;gap:7px}}
