@@ -2,12 +2,12 @@
 
 A lightweight, responsive, multi-page academic website intended for `kangyoon-lee.com`. 
 
-**Status:** Revised review draft. The user has purchased the domain on Cloudflare, but the website is not yet deployed or linked.
+**Status:** Research-profile update merged into `main` on 2026-11-09. GitHub content is updated; public deployment and custom-domain DNS still require independent verification.
 
 ## Pages and features
 
 - `index.html` — About, biography, research vision, selected projects, news preview, publications preview
-- `projects.html` — 5 project descriptions
+- `projects.html` — 6 project descriptions with AI / Networking / Networking for AI category tags
 - `publications.html` — 3 publications from the Oct 26, 2026 CV
 - `news.html` — expandable announcements (same source as homepage)
 - `blog.html` — honest empty state until posts are written
